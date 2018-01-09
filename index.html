@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pdf2htmlEX" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Resume - Sourabh Verma</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css"
+    />
+    <style>
+      @page {
+        size: A4;
+      }
+
+      @font-face {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        src: url("Open-Sans-Regular.ttf") format("truetype");
+      }
+
+      @font-face {
+        font-family: "Bariol";
+        font-style: normal;
+        font-weight: 400;
+        src: url("Bariol.otf") format("opentype");
+      }
+
+      @font-face {
+        font-family: "Aaux Pro";
+        font-style: normal;
+        font-weight: 400;
+        src: url("Aaux-Pro-Regular.ttf") format("truetype");
+      }
+
+      @font-face {
+        font-family: "Neutraface";
+        font-style: normal;
+        font-weight: 400;
+        src: url("Neutraface-Condensed-Light-Alt.otf") format("opentype");
+      }
+
+      @font-face {
+        font-family: "Blokk";
+        font-style: normal;
+        font-weight: 400;
+        src: url("BLOKK-Neue-Regular.ttf") format("truetype");
+      }
+
+      @font-face {
+        font-family: "Edmondsans";
+        font-style: normal;
+        font-weight: 400;
+        src: url("Edmondsans-Regular.otf") format("opentype");
+      }
+    </style>
+
+    <style>
+      :root {
+        --main-text-color: #111;
+        --secondary-text-color: #555;
+        --accent-color: #0099ff;
+        --side-width: 7rem;
+      }
+    </style>
+
+    <style>
+      main {
+        border-radius: 10px;
+      }
+
+      .name {
+        font-family: "Bariol";
+        font-size: 2rem;
+        margin: 0;
+        color: var(--main-text-color);
+      }
+
+      .social {
+        font-family: "Edmondsans";
+        font-size: 0.75rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        color: var(--secondary-text-color);
+      }
+
+      .social li {
+        display: inline-block;
+      }
+
+      .social li::after {
+        content: "|";
+        display: inline-block;
+        margin: 0 0.5rem;
+      }
+
+      .social li:last-child::after {
+        content: "";
+      }
+
+      .social li a {
+        color: var(--secondary-text-color);
+        text-decoration: none;
+      }
+      .social li a:visited {
+        color: var(--secondary-text-color);
+      }
+
+      .section-title {
+        font-family: "Neutraface";
+        font-size: 1.5rem;
+        margin: 0.4rem 0 0 0;
+        color: var(--secondary-text-color);
+        display: flex;
+        align-items: center;
+      }
+
+      .section-title::before {
+        content: "?";
+        color: transparent;
+        display: inline-block;
+        width: calc(var(--side-width) - 1rem);
+        margin: 0.4rem 1.5rem 0 0;
+        height: 0.45rem;
+        background-color: var(--accent-color);
+      }
+
+      section.exp {
+        margin: 0 0 0.5rem 0;
+      }
+
+      section.exp .aside {
+        font-family: "Bariol";
+        font-size: 0.8rem;
+        font-weight: bold;
+        width: var(--side-width);
+        color: var(--main-text-color);
+        margin: 0;
+        float: left;
+      }
+
+      section.exp .main {
+        margin-left: calc(var(--side-width) + 0.5rem);
+      }
+
+      section.exp .main p.company {
+        margin: 0;
+        font-family: "Bariol";
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: var(--main-text-color);
+        display: flex;
+        align-items: baseline;
+        gap: 0.3rem;
+      }
+
+      section.exp .main p.company span {
+        font-family: "Bariol";
+        font-weight: normal;
+        color: var(--secondary-text-color);
+      }
+
+      section.exp .main p.company span:nth-of-type(3) {
+        flex: 1;
+        font-size: 0.7rem;
+        text-align: right;
+        font-weight: bold;
+      }
+
+      section.exp .main p.techs {
+        margin: 0.1rem 0 0 0;
+        font-family: "Aaux Pro";
+        font-size: 0.7rem;
+        color: var(--secondary-text-color);
+      }
+      section.exp .main ul.desc {
+        margin: 0;
+        padding: 0;
+        margin-left: 0.4rem;
+      }
+
+      section.exp .main ul.desc li {
+        font-family: "Open Sans";
+        font-size: 0.675rem;
+        line-height: 0.88rem;
+        color: var(--main-text-color);
+        padding: 0 0 0 0.2rem;
+        margin: 0;
+      }
+
+      section.exp .main ul.desc li::marker {
+        content: "•";
+        font-size: 1rem;
+        font-family: "Bariol";
+        color: var(--secondary-text-color);
+      }
+
+      .row {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+      }
+      .column {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .column:first-child {
+        flex: 1;
+      }
+
+      .langs td {
+        font-family: "Bariol";
+        font-size: 0.88rem;
+      }
+
+      .langs td:first-child {
+        font-weight: bold;
+        width: var(--side-width);
+      }
+
+      .edu td {
+        font-family: "Bariol";
+        font-size: 0.88rem;
+      }
+
+      .edu td:first-child {
+        font-weight: bold;
+        width: var(--side-width);
+      }
+    </style>
+  </head>
+  <body class="A4">
+    <main class="sheet padding-10mm">
+      <h1 class="name">Sourabh Verma</h1>
+      <ul class="social">
+        <li>
+          <a href="mailto:sourabh.coder@gmail.com">sourabh.coder@gmail.com</a>
+        </li>
+        <li>
+          <a href="https://github.com/sourabhv">github.com/sourabhv</a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/vsourabh">
+            linkedin.com/in/vsourabh
+          </a>
+        </li>
+      </ul>
+
+      <h2 class="section-title">Experience</h2>
+
+      <section class="exp">
+        <p class="aside">Senior Software Engineer</p>
+        <div class="main">
+          <p class="company">
+            Toptal — Boston Consulting Group
+            <span>Boston, United States</span>
+            <span>(Apr 2022 – Present)</span>
+            <span>(Contract, 100% remote)</span>
+          </p>
+          <p class="techs">
+            Python, React, TypeScript, Django, Parquet, PostgreSQL, Redis,
+            GitLab CI/CD
+          </p>
+          <ul class="desc">
+            <li>
+              Led a 6-member team to build a versatile marketing tool with
+              capabilities for launching campaigns across multiple communication
+              channels, reaching a multi-million user base.
+            </li>
+            <li>
+              Created audience funnelling mechanism to segment customers based
+              on demographics, behaviour, past interactions.
+            </li>
+            <li>
+              Built a real-time monitoring dashboard backed by cube.js to track
+              campaign performance on all channels.
+            </li>
+            <li>
+              Constructed a dynamic offer control system that delivered
+              personalized offers based on customer attributes and conversion
+              history with support for stratification for fine-grained
+              targetting.
+            </li>
+            <li>
+              Improved customer engagement and reduced the workload by
+              developing a GPT4 & DALLE-2 powered service to generate marketing
+              email templates and customized call-scripts based on customer
+              attributes and interaction history.
+            </li>
+            <li>
+              Successfully deployed the campaign tool for a multi-million dollar
+              retention campaign with improved audience selection using
+              incremental filters, targeting at-risk customers with personalized
+              offers.
+            </li>
+            <li>
+              Incorporated gamification into a customer support application to
+              improve agent performance with real-time monitoring and alerts,
+              leading to higher customer satisfaction.
+            </li>
+            <li>
+              Implemented Twilio-based support for incoming/outgoing calls with
+              transcription, sentiment detection, and AI-driven cross-selling
+              during calls, resulting in a 7% boost in sales targets for an
+              Italian client.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="exp">
+        <p class="aside">Senior Software Engineer</p>
+        <div class="main">
+          <p class="company">
+            Toptal — Vybera (Cybrik) LLC
+            <span>New York, United States</span>
+            <span>(Sep 2021 – Mar 2022)</span>
+            <span>(Contract, 100% remote)</span>
+          </p>
+          <p class="techs">
+            Python, AWS, Electron, React, React Native, GitHub Actions, Web3.js,
+            Blockchain
+          </p>
+          <ul class="desc">
+            <li>
+              Architected and implemented secure, decentralized transactions and
+              exchange market API abstractions for 10,000+ currencies, tokens,
+              and NFTs using RESTful back-end APIs.
+            </li>
+            <li>
+              Developed a cutting-edge blockchain solution using Ethereum and
+              Bitcoin and web3.js, enabling secure and decentralized
+              transactions.
+            </li>
+            <li>
+              Led the development of a desktop app for Windows, macOS, and
+              Linux, leveraging Electron and React to deliver intuitive user
+              experiences with CSS3 animation and Trezor hardware wallet
+              support.
+            </li>
+            <li>
+              Led the React Native mobile app development, overseeing code
+              quality, performance, and maintainability.
+            </li>
+            <li>
+              Mentored and reviewed code for junior developers to ensure
+              adherence to best practices and maximize scalability.
+            </li>
+            <li>
+              Worked with a cross-functional team of developers, designers, and
+              product managers, optimizing workflow and delivering high-quality
+              projects on schedule.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="exp">
+        <p class="aside">Senior Software Engineer</p>
+        <div class="main">
+          <p class="company">
+            Toptal — Boston Consulting Group
+            <span>Boston, United States</span>
+            <span>(Feb 2021 – Sep 2021)</span>
+            <span>(Contract, 100% remote)</span>
+          </p>
+          <p class="techs">
+            Python, Django, JavaScript, React, PostgreSQL, Redis, MS SQL, AWS
+            Docker Nginx
+          </p>
+          <ul class="desc">
+            <li>
+              Developed a cutting-edge bidding tool that reduces procurement
+              cost by analyzing requirements, inventory, shipping costs, and
+              customs tax and delivered a significant cost savings exceeding
+              $1M.
+            </li>
+            <li>
+              Led a cross-functional team of engineers to design and implement
+              an auditing platform for real-time review of audits and shipment
+              documentation to ensure compliance with industry regulations.
+            </li>
+            <li>
+              Effectively deployed the auditing platform across 42 processing
+              plants, revolutionizing audit management and significantly
+              improving operational efficiency for hundreds of auditors.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="exp">
+        <p class="aside">Senior Software Engineer</p>
+        <div class="main">
+          <p class="company">
+            Enki
+            <span> San Francisco, USA</span>
+            <span>(Oct 2018 – Feb 2021)</span>
+            <span>(100% remote)</span>
+          </p>
+          <p class="techs">
+            Python, JavaScript, React Native, React, Redux, MongoDB, Node.js,
+            AWS, Firebase
+          </p>
+          <ul class="desc">
+            <li>
+              Led a team of engineers in rebuilding the back-end and mobile apps
+              from scratch, scaling them to over 1M+ users.
+            </li>
+            <li>
+              Optimized back-end operations by decoupling services across
+              various AWS platforms such as Lambda, ECS, and EBS.
+            </li>
+            <li>
+              Implemented critical observability such as CI/CD, log monitoring,
+              and analytics for maximum reliability.
+            </li>
+            <li>
+              Developed an auto-scaling code execution environment on AWS Lambda
+              to execute user-written code on the cloud.
+            </li>
+            <li>
+              Created a streamlined event-processing pipeline with SNS, SQS, and
+              AWS Lambda to handle asynchronous events.
+            </li>
+            <li>
+              Developed an enterprise training platform to track user progress,
+              generate reports, and improve team efficiency.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="exp">
+        <p class="aside">Mobile Engineer</p>
+        <div class="main">
+          <p class="company">
+            OLX
+            <span>India</span>
+            <span> (May 2018 – Oct 2018)</span>
+          </p>
+          <p class="techs">
+            Android, Java, Kotlin, RxJava, XMPP, MVP-Clean Architecture
+          </p>
+        </div>
+      </section>
+
+      <section class="exp">
+        <p class="aside">Software Engineer</p>
+        <div class="main">
+          <p class="company">
+            LifCare
+            <span>India</span>
+            <span> (Jun 2017 – May 2018)</span>
+          </p>
+          <p class="techs">
+            Java, Kotlin, Android, React Native, GCP, Firebase, Node.js, React,
+            Redux, RxJava, RxJS
+          </p>
+        </div>
+      </section>
+
+      <section class="exp">
+        <p class="aside">Software Engineer</p>
+        <div class="main">
+          <p class="company">
+            WedMeGood,
+            <span>India</span>
+            <span> (Jul 2015 – Jun 2017)</span>
+          </p>
+          <p class="techs">
+            Java, Kotlin, Android, React Native, GCP, Firebase, Node.js, React,
+            Redux, RxJava, RxJS
+          </p>
+        </div>
+      </section>
+
+      <div class="row">
+        <div class="column">
+          <h2 class="section-title">Languages and Technologies</h2>
+          <section class="langs">
+            <table>
+              <tbody>
+                <tr>
+                  <td>Languages</td>
+                  <td>Python, JavaScript, TypeScript, Golang, Kotlin, Java</td>
+                </tr>
+                <tr>
+                  <td>Frameworks</td>
+                  <td>
+                    Django, Node.js, Express.js, React, React-Native, Android
+                  </td>
+                </tr>
+                <tr>
+                  <td>Cloud</td>
+                  <td>AWS, Heroku</td>
+                </tr>
+                <tr>
+                  <td>Databases</td>
+                  <td>PostgreSQL, MS SQL, SQLite 3, MongoDB, Redis</td>
+                </tr>
+                <tr>
+                  <td>Others</td>
+                  <td>MacOS, Linux, Docker, Git, Firebase, Sketch</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+        <div class="column">
+          <h2 class="section-title">Education</h2>
+          <section class="edu">
+            <table>
+              <tbody>
+                <tr>
+                  <td>2011 – 2015</td>
+                  <td>
+                    M.D University, India
+                    <br />
+                    B.Tech in Computer Science
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
