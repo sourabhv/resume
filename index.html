@@ -62,28 +62,41 @@
         --main-text-color: #111;
         --secondary-text-color: #555;
         --accent-color: #0099ff;
-        --side-width: 7rem;
+        --side-width: 6.5rem;
       }
     </style>
 
     <style>
-      main {
-        border-radius: 10px;
+      @media screen {
+        main.sheet {
+          border-radius: 10px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      @media print {
+        main.sheet {
+          border-radius: 0;
+          margin: 0;
+        }
       }
 
       .name {
         font-family: "Bariol";
+        font-weight: normal;
         font-size: 2rem;
+        line-height: 120%;
         margin: 0;
         color: var(--main-text-color);
       }
 
       .social {
         font-family: "Edmondsans";
-        font-size: 0.75rem;
+        font-size: 0.8rem;
+        line-height: 120%;
         list-style: none;
         padding: 0;
-        margin: 0;
+        margin: 4px 0 0;
         color: var(--secondary-text-color);
       }
 
@@ -129,7 +142,11 @@
       }
 
       section.exp {
-        margin: 0 0 0.5rem 0;
+        margin: 0 0 0.6rem 0;
+      }
+
+      section.exp:first-of-type {
+        margin: 0.5rem 0;
       }
 
       section.exp .aside {
@@ -177,15 +194,15 @@
         color: var(--secondary-text-color);
       }
       section.exp .main ul.desc {
-        margin: 0;
+        margin: 6px 0 0;
         padding: 0;
         margin-left: 0.4rem;
       }
 
       section.exp .main ul.desc li {
         font-family: "Open Sans";
-        font-size: 0.675rem;
-        line-height: 0.88rem;
+        font-size: 11px;
+        line-height: 120%;
         color: var(--main-text-color);
         padding: 0 0 0 0.2rem;
         margin: 0;
@@ -215,21 +232,23 @@
 
       .langs td {
         font-family: "Bariol";
-        font-size: 0.88rem;
+        font-size: 0.77rem;
       }
 
       .langs td:first-child {
         font-weight: bold;
+        color: var(--secondary-text-color);
         width: var(--side-width);
       }
 
       .edu td {
         font-family: "Bariol";
-        font-size: 0.88rem;
+        font-size: 0.77rem;
       }
 
       .edu td:first-child {
         font-weight: bold;
+        color: var(--secondary-text-color);
         width: var(--side-width);
       }
     </style>
